@@ -4,10 +4,10 @@
 
 ----
 
-<p align="center">Open-source launcher and server using UServer and Boost.Asio</p>
+<p align="center">Open-source launcher and server for cheat projects using UServer and Boost.Asio</p>
 
 #### Requiments:
-1. WSL (Windows Subsystem for Linux)
+1. WSL ( Windows Subsystem for Linux )
 2. Boost.Asio ( Standalone version )
 3. Installed GO compiler
 ----

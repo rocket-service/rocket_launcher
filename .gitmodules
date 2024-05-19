@@ -1,0 +1,9 @@
+[submodule "thirdparty/asio"]
+	path = thirdparty/asio
+	url = https://github.com/chriskohlhoff/asio.git
+[submodule "thirdparty/imgui"]
+	path = thirdparty/imgui
+	url = https://github.com/ocornut/imgui.git
+[submodule "thirdparty/json"]
+	path = thirdparty/json
+	url = https://github.com/nlohmann/json.git

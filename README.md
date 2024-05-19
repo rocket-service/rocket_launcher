@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://github.com/Ke4ton/rocket_launcher"><img src="https://github.com/Ke4ton/rocket_launcher/blob/main/logo.png?raw=true" alt="Sublime's custom image"/></a>
+  <a href="https://github.com/Ke4ton/rocket_launcher"><img src="https://github.com/Ke4ton/rocket_launcher/blob/main/assets/logo.png?raw=true" alt="Rocket launcher logotype"/></a>
 </p>
 
 ----

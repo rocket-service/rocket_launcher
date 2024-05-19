@@ -7,3 +7,6 @@
 [submodule "thirdparty/json"]
 	path = thirdparty/json
 	url = https://github.com/nlohmann/json.git
+[submodule "thirdparty/userver"]
+	path = thirdparty/userver
+	url = https://github.com/userver-framework/userver.git

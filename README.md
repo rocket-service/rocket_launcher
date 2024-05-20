@@ -4,7 +4,7 @@
 
 ----
 
-<p align="center">Open-source launcher and server for cheat projects using UServer and Boost.Asio</p>
+<p align="center">Open-source launcher and server ( based on microservice architecture ) for cheat projects using UServer and Boost.Asio</p>
 
 #### Requiments:
 1. WSL ( Windows Subsystem for Linux )

@@ -35,9 +35,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{60e2c5fa-77ef-4503-a6da-0b2d07db6a94}</ProjectGuid>
+    <ProjectGuid>{7c2a2707-168e-417b-bf1b-cce2f5388869}</ProjectGuid>
     <Keyword>Linux</Keyword>
-    <RootNamespace>rocket_server</RootNamespace>
+    <RootNamespace>auth_microservice</RootNamespace>
     <MinimumVisualStudioVersion>15.0</MinimumVisualStudioVersion>
     <ApplicationType>Linux</ApplicationType>
     <ApplicationTypeRevision>1.0</ApplicationTypeRevision>
@@ -59,9 +59,11 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>WSL_Clang_1_0</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>WSL_Clang_1_0</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'" Label="Configuration">
     <UseDebugLibraries>false</UseDebugLibraries>
@@ -77,13 +79,22 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <OutDir>$(SolutionDir)build\bin\$(Configuration)\</OutDir>
     <IntDir>$(SolutionDir)build\obj\$(Configuration)\</IntDir>
+    <LibraryPath>
+    </LibraryPath>
+    <IncludePath>$(SolutionDir)thirdparty\userver\core\include;$(SolutionDir)thirdparty\userver\universal\include;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <OutDir>$(SolutionDir)build\bin\$(Configuration)\</OutDir>
     <IntDir>$(SolutionDir)build\obj\$(Configuration)\</IntDir>
+    <LibraryPath>
+    </LibraryPath>
+    <IncludePath>$(SolutionDir)thirdparty\userver\core\include;$(SolutionDir)thirdparty\userver\universal\include;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemGroup>
     <ClCompile Include="core.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="web_socket\web_socket.h" />
   </ItemGroup>
   <ItemDefinitionGroup />
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
